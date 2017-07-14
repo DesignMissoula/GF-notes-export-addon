@@ -6,13 +6,13 @@
 Plugin Name: Gravity Forms Notes Export Addon
 Plugin URI: https://github.com/DesignMissoula/GF-notes-export-addon
 Description: Used by millions.
-Version: 1.5.1
+Version: 1.6.1
 Author: Bradford Knowlton
 Author URI: http:/bradknowlton.com/
 Text Domain: gfnea
 */
 
-define( 'GF_NOTES_EXPORT_ADDON_VERSION', '1.5.1' );
+define( 'GF_NOTES_EXPORT_ADDON_VERSION', '1.6.1' );
 
 add_action( 'gform_loaded', array( 'GF_Notes_Export_AddOn_Bootstrap', 'load' ), 5 );
 
