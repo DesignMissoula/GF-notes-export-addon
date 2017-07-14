@@ -6,7 +6,7 @@
 Plugin Name: Gravity Forms Notes Export Addon
 Plugin URI: https://github.com/DesignMissoula/GF-notes-export-addon
 Description: Used by millions.
-Version: 1.0.5
+Version: 1.1.5
 Author: Bradford Knowlton
 Author URI: http:/bradknowlton.com/
 Text Domain: gfnea
@@ -35,11 +35,8 @@ function set_export_values( $value, $form_id, $field_id, $entry ) {
 				$date = GFCommon::format_date( $note->date_created, false );
 				$content = $note->value;
 				
-				
 				$values[] = "$date [$username] $content";
-			
 			}
-
 		}
         if( is_array($values) ){
 		    $value = join("\n\r",$values);
@@ -47,8 +44,6 @@ function set_export_values( $value, $form_id, $field_id, $entry ) {
 	    
         break;
     }
-    
-    
     
     return $value;
 }
