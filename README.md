@@ -2,6 +2,8 @@
 
 Allows exporting of Notes for entries during export of entries on WP backend.
 
+This plugin requires Gravity Forms, which is a paid extension.
+
 == Changelog ==
 
 = 1.6.1 =
